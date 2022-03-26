@@ -16,7 +16,7 @@ let preguntasArray =
     "¿Cuál de estos artistas latinos han alcanzado un Grammy?",
     "¿Qué Artista femenina del genero urbano, se encuentra en embarazo?",
     "¿Con que famoso se encuentra casada Shakira?",
-    "Esta es la pregunta número cinco, ¿esta es la pregunta numero qué?"
+    "¿Cúal es el nombre de la ultima gira de Daddy Yankee?"
     ];
 cambiarPregunta();
 cambiarRespuestas();
@@ -57,14 +57,14 @@ function cambiarRespuestas(){
         respuestasTexto[3].innerHTML = "Natti Natasha"
     }else if(numPregunta == 4){
         respuestasTexto[0].innerHTML = "Gerard piqué"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La cuatro"
-        respuestasTexto[3].innerHTML = "La tres"
+        respuestasTexto[1].innerHTML = "Silvestre Dangon"
+        respuestasTexto[2].innerHTML = "Rafael Novoa"
+        respuestasTexto[3].innerHTML = "Rafael Nadal"
     }else if(numPregunta == 5){
-        respuestasTexto[0].innerHTML = "La cinco"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La tres"
-        respuestasTexto[3].innerHTML = "La cuatro"
+        respuestasTexto[0].innerHTML = "The World Tour"
+        respuestasTexto[1].innerHTML = "La Última Vuelta Tour"
+        respuestasTexto[2].innerHTML = "The Big Boss"
+        respuestasTexto[3].innerHTML = "La Gasolina Tour"
     }
 }
 
@@ -83,7 +83,7 @@ function verificarRespuesta(){
 
         console.log("MAL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La uno"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Benito Antonio Martínez Ocasio\" "
         abrirVentana();
         respuestaIncorrecta();
         
@@ -99,7 +99,7 @@ function verificarRespuesta(){
         
         console.log("MALLL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La dos"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Juanes\""
         abrirVentana();
         respuestaIncorrecta();
 
@@ -115,11 +115,11 @@ function verificarRespuesta(){
         
         console.log("MALLL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La tres"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Greeicy Rendon\""
         abrirVentana();
         respuestaIncorrecta();
 
-    }else if(numPregunta == 4 && respuestaUsuario == "C"){
+    }else if(numPregunta == 4 && respuestaUsuario == "A"){
         
         console.log("BIENN");
         numPregunta++;
@@ -127,15 +127,15 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 4 && respuestaUsuario != "C"){
+    }else if(numPregunta == 4 && respuestaUsuario != "A"){
         
         console.log("MALLL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La cuatro"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Gerard piqué\""
         abrirVentana();
         respuestaIncorrecta();
 
-    }else if(numPregunta == 5 && respuestaUsuario == "A"){
+    }else if(numPregunta == 5 && respuestaUsuario == "B"){
         
         console.log("BIENN");
         numPregunta++;
@@ -144,11 +144,11 @@ function verificarRespuesta(){
         respuestaCorrecta();
 
 
-    }else if(numPregunta == 5 && respuestaUsuario != "A"){
+    }else if(numPregunta == 5 && respuestaUsuario != "B"){
         
         console.log("MAALL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La cinco";
+        retroalimentacion = "Lo siento, la respuesta era <br> \"La Última Vuelta Tour\"";
         abrirVentana();
         respuestaIncorrecta();
 
