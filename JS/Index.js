@@ -12,11 +12,11 @@ let numRespuestasIncorrectas = 0;
 let retroalimentacion = "";
 
 let preguntasArray = 
-    ["Esta es la pregunta número uno, ¿esta es la pregunta numero qué?",
-    "Esta es la pregunta número dos, ¿esta es la pregunta numero qué?",
-    "Esta es la pregunta número tres, ¿esta es la pregunta numero qué?",
-    "Esta es la pregunta número cuatro, ¿esta es la pregunta numero qué?",
-    "Esta es la pregunta número cinco, ¿esta es la pregunta numero qué?"
+    ["¿Cuál es el nombre real de BAD BUNNY?",
+    "¿Cuál de estos artistas latinos han alcanzado un Grammy?",
+    "¿Qué Artista femenina del genero urbano, se encuentra en embarazo?",
+    "¿Con que famoso se encuentra casada Shakira?",
+    "¿Cúal es el nombre de la ultima gira de Daddy Yankee?"
     ];
 cambiarPregunta();
 cambiarRespuestas();
@@ -41,37 +41,37 @@ function cambiarPregunta(){
 //PARA CAMBIAR LAS RESPUESTAS
 function cambiarRespuestas(){
     if(numPregunta == 1){
-        respuestasTexto[0].innerHTML = "La uno"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La tres"
-        respuestasTexto[3].innerHTML = "La cuatro"
+        respuestasTexto[0].innerHTML = "Juan Luis Londoño Arias"
+        respuestasTexto[1].innerHTML = "Nick Rivera Caminero"
+        respuestasTexto[2].innerHTML = "William Omar Landrón Rivera"
+        respuestasTexto[3].innerHTML = "Benito Antonio Martínez Ocasio"
     }else if(numPregunta == 2){
-        respuestasTexto[0].innerHTML = "La uno"
-        respuestasTexto[1].innerHTML = "La cuatro"
-        respuestasTexto[2].innerHTML = "La tres"
-        respuestasTexto[3].innerHTML = "La dos"
+        respuestasTexto[0].innerHTML = "J balvin"
+        respuestasTexto[1].innerHTML = "Juanes"
+        respuestasTexto[2].innerHTML = "Paola Jara"
+        respuestasTexto[3].innerHTML = "Sebastian Yatra"
     }else if(numPregunta == 3){
-        respuestasTexto[0].innerHTML = "La uno"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La cuatro"
-        respuestasTexto[3].innerHTML = "La tres"
+        respuestasTexto[0].innerHTML = "Karol G"
+        respuestasTexto[1].innerHTML = "Baby G"
+        respuestasTexto[2].innerHTML = "Greeicy Rendon"
+        respuestasTexto[3].innerHTML = "Natti Natasha"
     }else if(numPregunta == 4){
-        respuestasTexto[0].innerHTML = "La uno"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La cuatro"
-        respuestasTexto[3].innerHTML = "La tres"
+        respuestasTexto[0].innerHTML = "Gerard piqué"
+        respuestasTexto[1].innerHTML = "Silvestre Dangon"
+        respuestasTexto[2].innerHTML = "Rafael Novoa"
+        respuestasTexto[3].innerHTML = "Rafael Nadal"
     }else if(numPregunta == 5){
-        respuestasTexto[0].innerHTML = "La cinco"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La tres"
-        respuestasTexto[3].innerHTML = "La cuatro"
+        respuestasTexto[0].innerHTML = "The World Tour"
+        respuestasTexto[1].innerHTML = "La Última Vuelta Tour"
+        respuestasTexto[2].innerHTML = "The Big Boss"
+        respuestasTexto[3].innerHTML = "La Gasolina Tour"
     }
 }
 
 //PARA SABER SI ESTÁ BIEN O MAL
 function verificarRespuesta(){
 
-    if(numPregunta == 1 && respuestaUsuario == "A"){
+    if(numPregunta == 1 && respuestaUsuario == "D"){
         
         console.log("BIEEN");
         numPregunta++;
@@ -79,15 +79,15 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 1 && respuestaUsuario != "A"){
+    }else if(numPregunta == 1 && respuestaUsuario != "D"){
 
         console.log("MAL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La uno"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Benito Antonio Martínez Ocasio\" "
         abrirVentana();
         respuestaIncorrecta();
         
-    }else if(numPregunta == 2 && respuestaUsuario == "D"){
+    }else if(numPregunta == 2 && respuestaUsuario == "B"){
 
         console.log("BIEEN");
         numPregunta++;
@@ -95,15 +95,15 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 2 && respuestaUsuario != "D"){
+    }else if(numPregunta == 2 && respuestaUsuario != "B"){
         
         console.log("MALLL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La dos"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Juanes\""
         abrirVentana();
         respuestaIncorrecta();
 
-    }else if(numPregunta == 3 && respuestaUsuario == "D"){
+    }else if(numPregunta == 3 && respuestaUsuario == "C"){
         
         console.log("BIENN");
         numPregunta++;
@@ -111,15 +111,15 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 3 && respuestaUsuario != "D"){
+    }else if(numPregunta == 3 && respuestaUsuario != "C"){
         
         console.log("MALLL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La tres"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Greeicy Rendon\""
         abrirVentana();
         respuestaIncorrecta();
 
-    }else if(numPregunta == 4 && respuestaUsuario == "C"){
+    }else if(numPregunta == 4 && respuestaUsuario == "A"){
         
         console.log("BIENN");
         numPregunta++;
@@ -127,15 +127,15 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 4 && respuestaUsuario != "C"){
+    }else if(numPregunta == 4 && respuestaUsuario != "A"){
         
         console.log("MALLL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La cuatro"
+        retroalimentacion = "Lo siento, la respuesta era <br> \"Gerard piqué\""
         abrirVentana();
         respuestaIncorrecta();
 
-    }else if(numPregunta == 5 && respuestaUsuario == "A"){
+    }else if(numPregunta == 5 && respuestaUsuario == "B"){
         
         console.log("BIENN");
         numPregunta++;
@@ -144,11 +144,11 @@ function verificarRespuesta(){
         respuestaCorrecta();
 
 
-    }else if(numPregunta == 5 && respuestaUsuario != "A"){
+    }else if(numPregunta == 5 && respuestaUsuario != "B"){
         
         console.log("MAALL");
         numPregunta++;
-        retroalimentacion = "Lo siento, la respuesta era La cinco";
+        retroalimentacion = "Lo siento, la respuesta era <br> \"La Última Vuelta Tour\"";
         abrirVentana();
         respuestaIncorrecta();
 
