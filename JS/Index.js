@@ -12,10 +12,10 @@ let numRespuestasIncorrectas = 0;
 let retroalimentacion = "";
 
 let preguntasArray = 
-    ["Esta es la pregunta número uno, ¿esta es la pregunta numero qué?",
-    "Esta es la pregunta número dos, ¿esta es la pregunta numero qué?",
-    "Esta es la pregunta número tres, ¿esta es la pregunta numero qué?",
-    "Esta es la pregunta número cuatro, ¿esta es la pregunta numero qué?",
+    ["¿Cuál es el nombre real de BAD BUNNY?",
+    "¿Cuál de estos artistas latinos han alcanzado un Grammy?",
+    "¿Qué Artista femenina del genero urbano, se encuentra en embarazo?",
+    "¿Con que famoso se encuentra casada Shakira?",
     "Esta es la pregunta número cinco, ¿esta es la pregunta numero qué?"
     ];
 cambiarPregunta();
@@ -41,22 +41,22 @@ function cambiarPregunta(){
 //PARA CAMBIAR LAS RESPUESTAS
 function cambiarRespuestas(){
     if(numPregunta == 1){
-        respuestasTexto[0].innerHTML = "La uno"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La tres"
-        respuestasTexto[3].innerHTML = "La cuatro"
+        respuestasTexto[0].innerHTML = "Juan Luis Londoño Arias"
+        respuestasTexto[1].innerHTML = "Nick Rivera Caminero"
+        respuestasTexto[2].innerHTML = "William Omar Landrón Rivera"
+        respuestasTexto[3].innerHTML = "Benito Antonio Martínez Ocasio"
     }else if(numPregunta == 2){
-        respuestasTexto[0].innerHTML = "La uno"
-        respuestasTexto[1].innerHTML = "La cuatro"
-        respuestasTexto[2].innerHTML = "La tres"
-        respuestasTexto[3].innerHTML = "La dos"
+        respuestasTexto[0].innerHTML = "J balvin"
+        respuestasTexto[1].innerHTML = "Juanes"
+        respuestasTexto[2].innerHTML = "Paola Jara"
+        respuestasTexto[3].innerHTML = "Sebastian Yatra"
     }else if(numPregunta == 3){
-        respuestasTexto[0].innerHTML = "La uno"
-        respuestasTexto[1].innerHTML = "La dos"
-        respuestasTexto[2].innerHTML = "La cuatro"
-        respuestasTexto[3].innerHTML = "La tres"
+        respuestasTexto[0].innerHTML = "Karol G"
+        respuestasTexto[1].innerHTML = "Baby G"
+        respuestasTexto[2].innerHTML = "Greeicy Rendon"
+        respuestasTexto[3].innerHTML = "Natti Natasha"
     }else if(numPregunta == 4){
-        respuestasTexto[0].innerHTML = "La uno"
+        respuestasTexto[0].innerHTML = "Gerard piqué"
         respuestasTexto[1].innerHTML = "La dos"
         respuestasTexto[2].innerHTML = "La cuatro"
         respuestasTexto[3].innerHTML = "La tres"
@@ -71,7 +71,7 @@ function cambiarRespuestas(){
 //PARA SABER SI ESTÁ BIEN O MAL
 function verificarRespuesta(){
 
-    if(numPregunta == 1 && respuestaUsuario == "A"){
+    if(numPregunta == 1 && respuestaUsuario == "D"){
         
         console.log("BIEEN");
         numPregunta++;
@@ -79,7 +79,7 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 1 && respuestaUsuario != "A"){
+    }else if(numPregunta == 1 && respuestaUsuario != "D"){
 
         console.log("MAL");
         numPregunta++;
@@ -87,7 +87,7 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaIncorrecta();
         
-    }else if(numPregunta == 2 && respuestaUsuario == "D"){
+    }else if(numPregunta == 2 && respuestaUsuario == "B"){
 
         console.log("BIEEN");
         numPregunta++;
@@ -95,7 +95,7 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 2 && respuestaUsuario != "D"){
+    }else if(numPregunta == 2 && respuestaUsuario != "B"){
         
         console.log("MALLL");
         numPregunta++;
@@ -103,7 +103,7 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaIncorrecta();
 
-    }else if(numPregunta == 3 && respuestaUsuario == "D"){
+    }else if(numPregunta == 3 && respuestaUsuario == "C"){
         
         console.log("BIENN");
         numPregunta++;
@@ -111,7 +111,7 @@ function verificarRespuesta(){
         abrirVentana();
         respuestaCorrecta();
 
-    }else if(numPregunta == 3 && respuestaUsuario != "D"){
+    }else if(numPregunta == 3 && respuestaUsuario != "C"){
         
         console.log("MALLL");
         numPregunta++;
