@@ -46,7 +46,7 @@ function cambiarRespuestas(){
         respuestasTexto[2].innerHTML = "William Omar Landrón Rivera"
         respuestasTexto[3].innerHTML = "Benito Antonio Martínez Ocasio"
     }else if(numPregunta == 2){
-        respuestasTexto[0].innerHTML = "J balvin"
+        respuestasTexto[0].innerHTML = "J Alvarez"
         respuestasTexto[1].innerHTML = "Juanes"
         respuestasTexto[2].innerHTML = "Paola Jara"
         respuestasTexto[3].innerHTML = "Sebastian Yatra"
